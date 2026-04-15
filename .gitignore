@@ -1,0 +1,113 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pyi
+
+# Virtual environments (CRITICAL)
+venv/
+env/
+ENV/
+.venv/
+site-packages/
+
+# =========================
+# C / C++ / CUDA builds
+# =========================
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.out
+*.a
+*.lib
+
+# CUDA / compiled GPU stuff
+*.cubin
+*.ptx
+
+# =========================
+# Build directories
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# Data / ML artifacts
+# =========================
+*.mat
+*.sav
+*.h5
+*.pkl
+*.joblib
+*.npy
+*.npz
+
+# ML model weights (YOLO, PyTorch, ONNX, etc.)
+*.pt
+*.pth
+*.weights
+*.onnx
+
+# =========================
+# Media / Large binaries
+# =========================
+# Videos (sample/output videos can be large)
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Fonts
+*.ttf
+*.otf
+
+# =========================
+# Logs & temp
+# =========================
+*.log
+*.tmp
+*.temp
+*.cache
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.iml
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+
+# =========================
+# Project-specific outputs
+# =========================
+# Ignore auto-generated results but keep sample assets
+retro-system/data/results.json
+
+# =========================
+# Misc
+# =========================
+*.typed
+*.yaml.lock
