@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retroreflectivity Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="dashboard-shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Hackathon Prototype</p>
+        <h1>AI-Based Vehicle-Mounted Retroreflectivity Measurement System</h1>
+        <p class="hero-copy">
+          Process camera imagery, estimate retroreflectivity, and monitor road assets on a live map.
+        </p>
+      </div>
+      <button id="refreshButton" class="refresh-button">Refresh Dashboard</button>
+    </section>
+
+    <section class="dashboard-grid">
+      <aside class="sidebar">
+        <div class="stat-grid">
+          <article class="stat-card">
+            <span class="stat-label">Total Detections</span>
+            <strong id="totalCount">0</strong>
+          </article>
+          <article class="stat-card good">
+            <span class="stat-label">Good</span>
+            <strong id="goodCount">0</strong>
+          </article>
+          <article class="stat-card moderate">
+            <span class="stat-label">Moderate</span>
+            <strong id="moderateCount">0</strong>
+          </article>
+          <article class="stat-card poor">
+            <span class="stat-label">Poor</span>
+            <strong id="poorCount">0</strong>
+          </article>
+        </div>
+
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>Detection Feed</h2>
+            <span id="statusText" class="status-text">Waiting for backend data...</span>
+          </div>
+          <div id="resultList" class="result-list"></div>
+        </section>
+      </aside>
+
+      <section class="panel map-panel">
+        <div class="panel-heading">
+          <h2>Map View</h2>
+          <span>Leaflet marker colors map to condition labels</span>
+        </div>
+        <div id="map"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="app.js"></script>
+</body>
+</html>

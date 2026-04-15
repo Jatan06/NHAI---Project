@@ -1,0 +1,7 @@
+flask==3.0.3
+numpy==1.26.4; python_version < "3.13"
+numpy>=2.2,<2.3; python_version >= "3.13"
+opencv-python==4.10.0.84
+requests==2.32.3
+torch>=2.2.0
+ultralytics>=8.3.58

@@ -1,0 +1,78 @@
+[
+  {
+    "type": "traffic_sign",
+    "score": 138,
+    "status": "Moderate",
+    "timestamp": "2026-04-15T10:26:18.193272+00:00",
+    "lat": 23.467274,
+    "lng": 72.663229,
+    "source": "sample_image.png",
+    "frame_index": 0,
+    "label": "stop sign",
+    "confidence": 0.775,
+    "method": "yolov8",
+    "bbox": {
+      "x1": 66,
+      "y1": 85,
+      "x2": 153,
+      "y2": 174
+    }
+  },
+  {
+    "type": "lane_marking",
+    "score": 135,
+    "status": "Moderate",
+    "timestamp": "2026-04-15T10:26:18.193272+00:00",
+    "lat": 23.383816,
+    "lng": 72.525015,
+    "source": "sample_image.png",
+    "frame_index": 0,
+    "label": "lane_marking",
+    "confidence": 0.477,
+    "method": "cv-fallback",
+    "bbox": {
+      "x1": 697,
+      "y1": 324,
+      "x2": 860,
+      "y2": 720
+    }
+  },
+  {
+    "type": "lane_marking",
+    "score": 136,
+    "status": "Moderate",
+    "timestamp": "2026-04-15T10:26:18.193272+00:00",
+    "lat": 23.357941,
+    "lng": 72.680835,
+    "source": "sample_image.png",
+    "frame_index": 0,
+    "label": "lane_marking",
+    "confidence": 0.477,
+    "method": "cv-fallback",
+    "bbox": {
+      "x1": 420,
+      "y1": 324,
+      "x2": 582,
+      "y2": 720
+    }
+  },
+  {
+    "type": "lane_marking",
+    "score": 155,
+    "status": "Moderate",
+    "timestamp": "2026-04-15T10:26:18.193272+00:00",
+    "lat": 23.12861,
+    "lng": 72.585348,
+    "source": "sample_image.png",
+    "frame_index": 0,
+    "label": "lane_marking",
+    "confidence": 0.469,
+    "method": "cv-fallback",
+    "bbox": {
+      "x1": 599,
+      "y1": 394,
+      "x2": 681,
+      "y2": 708
+    }
+  }
+]
